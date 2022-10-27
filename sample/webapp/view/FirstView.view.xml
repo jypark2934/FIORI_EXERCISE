@@ -1,0 +1,28 @@
+<mvc:View controllerName="zc07.c07.sample.controller.FirstView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="제목입니다.">
+    <content>
+
+    <Table
+                id="table"
+                items="{/SoHeaderSet}">
+                <columns>
+                    <Column
+                        width="12em">
+                        <Text text="오더번호" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem vAlign="Middle">
+                        <cells>
+                            <Text text="{Sonum}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+
+    </Page>
+</mvc:View>
+    
